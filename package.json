@@ -2,7 +2,7 @@
   "name": "adelphos-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://your-username.github.io/adelphos-high-school",
+  "homepage": "https://besuhosiso.github.io/adelphos-high-school",
   "type": "module",
   "scripts": {
     "dev": "vite",
