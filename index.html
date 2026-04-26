@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Adelphos High School is a modern STEM academy offering innovative science, technology, engineering, and math programs for motivated students." />
+    <meta name="theme-color" content="#111827" />
+    <title>Adelphos — Innovative STEM Education for Tomorrow</title>
+    <script type="text/javascript">
+      // Handle GitHub Pages redirection logic
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&') 
+          }).filter(function(v) {
+            return v.indexOf('p=/') === 0;
+          })[0];
+          if (decoded) {
+            window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded.slice(3) + l.hash);
+          }
+        }
+      }(window.location))
+    </script>
+    <script type="module" crossorigin src="/assets/index-DUFm1cFs.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-thFUCKLI.css">
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
