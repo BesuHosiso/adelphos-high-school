@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { MdSchool, MdEvent, MdAssignment, MdScience } from 'react-icons/md'
 import AnimatedSection from '../components/AnimatedSection.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
@@ -242,6 +242,19 @@ function Student() {
   const loadMoreEvents = () => {
     setVisibleEvents(prev => Math.min(prev + 5, events.length));
   };
+
+  // Fix for "two scrollers" - Locks background scrolling when modal is open
+  useEffect(() => {
+    if (modalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [modalOpen]);
+
   return (
     <main className="bg-slate-50 text-slate-950 overflow-x-hidden">
       <AnimatedSection className="py-20">
@@ -440,41 +453,62 @@ function Student() {
 
       {modalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-md flex items-center justify-center z-50 p-4">
-          <div className="bg-slate-900 bg-opacity-90 backdrop-blur-lg rounded-2xl p-4 sm:p-8 max-w-5xl w-full relative shadow-2xl border border-slate-700 max-h-[95vh] flex flex-col">
+          <div className="bg-slate-900/95 backdrop-blur-xl rounded-3xl p-5 sm:p-8 md:p-10 max-w-5xl w-full relative shadow-2xl border border-white/10 max-h-[92vh] flex flex-col">
             <button
               onClick={() => setModalOpen(false)}
               type="button"
               aria-label="Close gallery modal"
-              className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white text-3xl hover:text-red-400 transition-colors bg-slate-800 bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center z-20"
+              className="absolute top-3 right-3 sm:top-5 sm:right-5 text-white/70 hover:text-white text-3xl transition-colors bg-white/5 hover:bg-white/10 rounded-full w-10 h-10 flex items-center justify-center z-30 border border-white/10"
             >
               &times;
             </button>
-            <div className="flex items-center justify-between flex-1 min-h-0">
+            <div className="flex items-center justify-between flex-1 min-h-0 gap-4">
               <button
                 onClick={prevImage}
-                className="hidden sm:flex text-white text-4xl hover:text-red-400 transition-colors p-3 rounded-full bg-slate-800 bg-opacity-50 hover:bg-opacity-70 shrink-0"
+                className="hidden md:flex text-white/50 hover:text-white text-4xl transition-colors p-4 rounded-full bg-white/5 hover:bg-white/10 shrink-0 border border-white/5"
               >
                 &#8249;
               </button>
-              <div className="flex-1 mx-2 sm:mx-8 text-center flex flex-col justify-center overflow-y-auto">
+              <div className="flex-1 mx-0 md:mx-10 text-center flex flex-col justify-center overflow-y-auto no-scrollbar">
                 <img
                   src={galleryImages[currentIndex].src}
                   alt={galleryImages[currentIndex].alt}
-                  className="max-h-80 w-auto mx-auto rounded-lg shadow-lg object-contain"
+                  className="max-h-[35vh] sm:max-h-[50vh] md:max-h-[60vh] w-auto mx-auto rounded-2xl shadow-2xl object-contain border border-white/5"
                 />
-                <h3 className="text-2xl font-semibold text-white mt-6">{galleryImages[currentIndex].title}</h3>
-                <p className="text-slate-300 mt-3 text-lg leading-relaxed max-w-2xl mx-auto">{galleryImages[currentIndex].description}</p>
-                <p className="text-slate-400 text-sm mt-4 font-medium">{galleryImages[currentIndex].date}</p>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mt-6 sm:mt-8">{galleryImages[currentIndex].title}</h3>
+                <p className="text-slate-400 mt-2 sm:mt-3 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto px-2">{galleryImages[currentIndex].description}</p>
+                <div className="mt-4 sm:mt-6 inline-flex items-center justify-center gap-2 text-red-500/80 text-xs sm:text-sm font-medium uppercase tracking-widest">
+                  <span className="w-8 h-px bg-red-500/30"></span>
+                  {galleryImages[currentIndex].date}
+                  <span className="w-8 h-px bg-red-500/30"></span>
+                </div>
               </div>
               <button
                 onClick={nextImage}
                 type="button"
-                className="hidden sm:flex text-white text-4xl hover:text-red-400 transition-colors p-3 rounded-full bg-slate-800 bg-opacity-50 hover:bg-opacity-70 shrink-0"
+                className="hidden md:flex text-white/50 hover:text-white text-4xl transition-colors p-4 rounded-full bg-white/5 hover:bg-white/10 shrink-0 border border-white/5"
               >
                 &#8250;
               </button>
             </div>
-            <div className="flex justify-center mt-4 sm:mt-6 space-x-2">
+
+            {/* Mobile Navigation Arrows (Visible only on small screens) */}
+            <div className="flex md:hidden items-center justify-center gap-8 mt-6">
+               <button
+                onClick={prevImage}
+                className="text-white/70 hover:text-white text-3xl p-3 rounded-xl bg-white/5 border border-white/10 active:scale-95 transition-all"
+              >
+                &#8249;
+              </button>
+               <button
+                onClick={nextImage}
+                className="text-white/70 hover:text-white text-3xl p-3 rounded-xl bg-white/5 border border-white/10 active:scale-95 transition-all"
+              >
+                &#8250;
+              </button>
+            </div>
+
+            <div className="flex justify-center mt-6 sm:mt-8 space-x-2">
               {galleryImages.map((_, index) => (
                 <button
                   key={index}
