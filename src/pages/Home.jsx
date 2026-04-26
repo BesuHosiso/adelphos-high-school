@@ -12,7 +12,7 @@ function Home() {
   }, []);
 
   return (
-    <main className="bg-slate-50 text-slate-950">
+    <main className="bg-slate-50 text-slate-950 overflow-x-hidden">
       <AnimatedSection className="bg-white hero-panel py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_0.85fr] items-center">

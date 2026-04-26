@@ -67,7 +67,7 @@ function Contact() {
   }
 
   return (
-    <main className="bg-slate-50 text-slate-950">
+    <main className="bg-slate-50 text-slate-950 overflow-x-hidden">
       <AnimatedSection className="py-20">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <SectionHeader

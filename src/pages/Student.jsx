@@ -243,7 +243,7 @@ function Student() {
     setVisibleEvents(prev => Math.min(prev + 5, events.length));
   };
   return (
-    <main className="bg-slate-50 text-slate-950">
+    <main className="bg-slate-50 text-slate-950 overflow-x-hidden">
       <AnimatedSection className="py-20">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <SectionHeader
@@ -440,23 +440,23 @@ function Student() {
 
       {modalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-md flex items-center justify-center z-50 p-4">
-          <div className="bg-slate-900 bg-opacity-90 backdrop-blur-lg rounded-2xl p-8 max-w-5xl w-full relative shadow-2xl border border-slate-700 min-h-150 flex flex-col">
+          <div className="bg-slate-900 bg-opacity-90 backdrop-blur-lg rounded-2xl p-4 sm:p-8 max-w-5xl w-full relative shadow-2xl border border-slate-700 max-h-[95vh] flex flex-col">
             <button
               onClick={() => setModalOpen(false)}
               type="button"
               aria-label="Close gallery modal"
-              className="absolute top-4 right-4 text-white text-3xl hover:text-red-400 transition-colors bg-slate-800 bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center"
+              className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white text-3xl hover:text-red-400 transition-colors bg-slate-800 bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center z-20"
             >
               &times;
             </button>
-            <div className="flex items-center justify-between flex-1">
+            <div className="flex items-center justify-between flex-1 min-h-0">
               <button
                 onClick={prevImage}
-                className="text-white text-4xl hover:text-red-400 transition-colors p-3 rounded-full bg-slate-800 bg-opacity-50 hover:bg-opacity-70 shrink-0"
+                className="hidden sm:flex text-white text-4xl hover:text-red-400 transition-colors p-3 rounded-full bg-slate-800 bg-opacity-50 hover:bg-opacity-70 shrink-0"
               >
                 &#8249;
               </button>
-              <div className="flex-1 mx-8 text-center flex flex-col justify-center">
+              <div className="flex-1 mx-2 sm:mx-8 text-center flex flex-col justify-center overflow-y-auto">
                 <img
                   src={galleryImages[currentIndex].src}
                   alt={galleryImages[currentIndex].alt}
@@ -469,12 +469,12 @@ function Student() {
               <button
                 onClick={nextImage}
                 type="button"
-                className="text-white text-4xl hover:text-red-400 transition-colors p-3 rounded-full bg-slate-800 bg-opacity-50 hover:bg-opacity-70 shrink-0"
+                className="hidden sm:flex text-white text-4xl hover:text-red-400 transition-colors p-3 rounded-full bg-slate-800 bg-opacity-50 hover:bg-opacity-70 shrink-0"
               >
                 &#8250;
               </button>
             </div>
-            <div className="flex justify-center mt-6 space-x-2">
+            <div className="flex justify-center mt-4 sm:mt-6 space-x-2">
               {galleryImages.map((_, index) => (
                 <button
                   key={index}
