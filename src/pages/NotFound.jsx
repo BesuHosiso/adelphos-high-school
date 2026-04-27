@@ -9,7 +9,7 @@ const NotFound = () => {
     canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/404" // Or the base URL if no specific 404 page
   });
   return (
-    <main className="min-h-dvh bg-slate-50 text-slate-950 flex items-center justify-center py-20 px-6">
+    <main className="min-h-dvh bg-slate-50 text-slate-950 flex items-center justify-center py-20 px-6 overflow-x-clip relative w-full">
       <div className="max-w-2xl rounded-4xl border border-slate-200 bg-white p-12 shadow-2xl shadow-slate-200/40 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-600">Page not found</p>
         <h1 className="mt-6 text-5xl font-semibold tracking-tight text-slate-950">404</h1>

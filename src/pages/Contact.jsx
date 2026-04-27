@@ -16,7 +16,7 @@ function Contact() {
   const faqs = [
     {
       question: "What is the primary focus of Adelphos?",
-      answer: "Our focus is science and technology excellence, preparing students for university and careers in STEM fields through rigorous academics and hands-on experience."
+      answer: "Our focus is science and technology excellence, preparing students for university and careers in scientific and technological fields through rigorous academics."
     },
     {
       question: "Which grades are offered at the school?",

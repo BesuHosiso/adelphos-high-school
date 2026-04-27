@@ -364,7 +364,7 @@ function Student() {
                   </div>
                   <div className="border-l-4 border-red-600 pl-4">
                     <p className="text-sm font-semibold text-slate-950">Scholarship Applications Open</p>
-                    <p className="text-xs text-slate-600 mt-1">STEM Excellence Scholarships now available</p>
+                    <p className="text-xs text-slate-600 mt-1">Science & Tech Scholarships now available</p>
                   </div>
                   <div className="border-l-4 border-red-600 pl-4">
                     <p className="text-sm font-semibold text-slate-950">Guest Speaker Series</p>
@@ -460,7 +460,7 @@ function Student() {
       </AnimatedSection>
 
       {modalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-md flex items-center justify-center z-50 p-4">
+        <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-md flex items-center justify-center z-50 p-4 overflow-hidden">
           <div className="bg-slate-900/95 backdrop-blur-xl rounded-3xl p-5 sm:p-8 md:p-10 max-w-5xl w-full relative shadow-2xl border border-white/10 max-h-[92dvh] flex flex-col">
             <button
               onClick={() => setModalOpen(false)}

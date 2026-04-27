@@ -11,7 +11,7 @@ const Enroll = () => {
 
     useSeo({
         title: "Join Adelphos | Science & Technology Admission Process",
-        description: "Apply to Ethiopia's leading Science and Technology academy. View requirements for our technology-focused preparatory programs and start your application today.",
+        description: "Apply to Ethiopia's leading Science and Technology academy. Join our tech-focused preparatory programs and start your application today.",
         keywords: "Adelphos admissions, high school application Ethiopia, Science and Technology school fees, admission requirements Wolaita, apply for coding and programming, preparatory school enrollment",
         canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/enroll"
     });
@@ -69,7 +69,7 @@ const Enroll = () => {
             setErrors({});
         }
     };
-
+        
     return (
         <main className="bg-slate-50 text-slate-950 overflow-x-clip relative w-full min-h-dvh">
             <AnimatedSection className="bg-slate-950 text-white py-20">
@@ -106,7 +106,7 @@ const Enroll = () => {
                                 <div className="flex items-start gap-3 rounded-3xl border border-white/10 bg-white/10 p-5">
                                     <MdRocket className="mt-1 text-2xl text-red-600" />
                                     <div>
-                                        <p className="text-sm font-semibold text-white">Fast-track STEM</p>
+                                        <p className="text-sm font-semibold text-white">Science & Tech</p>
                                         <p className="mt-1 text-sm text-slate-200">Project-based learning with expert mentorship.</p>
                                     </div>
                                 </div>
@@ -128,7 +128,7 @@ const Enroll = () => {
                     <SectionHeader
                         label="Admission Requirements"
                         title="What you need to join our community."
-                        description="We look for motivated students ready to engage in rigorous STEM education. Here's what you'll need for your application."
+                        description="We look for motivated students ready to engage in rigorous Science and Technology education. Here's what you'll need for your application."
                     />
 
                     <div className="mt-12 grid gap-8 md:grid-cols-2">
@@ -265,7 +265,7 @@ const Enroll = () => {
                     <SectionHeader
                         label="Student Application"
                         title="Complete the form below to begin the admission process"
-                        description="We keep the application simple so you can focus on what matters most: your goals, your background, and your readiness for a STEM-focused education."
+                        description="We keep the application simple so you can focus on what matters most: your goals, your background, and your readiness for a Science and Technology education."
                     />
 
                     <div className="surface-panel mt-10 overflow-hidden rounded-4xl p-8 sm:p-10">

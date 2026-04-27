@@ -96,7 +96,7 @@ function Home() {
                   <MdExpandMore className="text-white" />
                 </summary>
                 <p className="mt-4 text-sm leading-7 text-slate-300">
-                  Our curriculum emphasizes science and technology, with strong programs in math, chemistry, biology, physics, and English. IT is offered as a supplementary subject.
+                  Our curriculum emphasizes Science and Technology, with strong programs in Biology, Chemistry, Physics, and English, complemented by coding and programming.
                 </p>
               </details>
               <details className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
