@@ -3,7 +3,7 @@ import AnimatedSection from '../components/AnimatedSection.jsx';
 import SectionHeader from '../components/SectionHeader.jsx';
 
 const TermsOfService = () => (
-  <main className="bg-slate-50 text-slate-950 overflow-x-hidden max-w-full relative">
+  <main className="bg-slate-50 text-slate-950">
     <AnimatedSection className="py-20">
       <div className="mx-auto max-w-5xl px-6 text-center">
         <SectionHeader

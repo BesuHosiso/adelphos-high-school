@@ -256,7 +256,7 @@ function Student() {
   }, [modalOpen]);
 
   return (
-    <main className="bg-slate-50 text-slate-950 overflow-x-hidden max-w-full relative">
+    <main className="bg-slate-50 text-slate-950 overflow-x-clip relative max-w-full">
       <AnimatedSection className="py-20">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <SectionHeader
@@ -453,7 +453,7 @@ function Student() {
 
       {modalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-md flex items-center justify-center z-50 p-4">
-          <div className="bg-slate-900/95 backdrop-blur-xl rounded-3xl p-5 sm:p-8 md:p-10 max-w-5xl w-full relative shadow-2xl border border-white/10 max-h-[92vh] flex flex-col">
+          <div className="bg-slate-900/95 backdrop-blur-xl rounded-3xl p-5 sm:p-8 md:p-10 max-w-5xl w-full relative shadow-2xl border border-white/10 max-h-[92dvh] flex flex-col">
             <button
               onClick={() => setModalOpen(false)}
               type="button"
@@ -473,7 +473,7 @@ function Student() {
                 <img
                   src={galleryImages[currentIndex].src}
                   alt={galleryImages[currentIndex].alt}
-                  className="max-h-[35vh] sm:max-h-[50vh] md:max-h-[60vh] w-auto mx-auto rounded-2xl shadow-2xl object-contain border border-white/5"
+                  className="max-h-[35dvh] sm:max-h-[50dvh] md:max-h-[60dvh] w-auto mx-auto rounded-2xl shadow-2xl object-contain border border-white/5"
                 />
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mt-6 sm:mt-8">{galleryImages[currentIndex].title}</h3>
                 <p className="text-slate-400 mt-2 sm:mt-3 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto px-2">{galleryImages[currentIndex].description}</p>
