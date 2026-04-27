@@ -1,9 +1,18 @@
 import React from 'react';
 import AnimatedSection from '../components/AnimatedSection.jsx';
 import SectionHeader from '../components/SectionHeader.jsx';
+import useSeo from '../hooks/useSeo.js';
 
-const TermsOfService = () => (
-  <main className="bg-slate-50 text-slate-950">
+const TermsOfService = () => {
+  useSeo({
+    title: "Terms of Service | Adelphos Science & Technology Academy",
+    description: "Guidelines for accessing the Adelphos High School digital platforms and educational resources in science and technology.",
+    keywords: "Adelphos terms, high school rules, digital platform usage, educational resource terms",
+    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/terms-of-service"
+  });
+
+  return (
+    <main className="bg-slate-50 text-slate-950">
     <AnimatedSection className="py-20">
       <div className="mx-auto max-w-5xl px-6 text-center">
         <SectionHeader
@@ -51,6 +60,7 @@ const TermsOfService = () => (
       </div>
     </AnimatedSection>
   </main>
-);
+  );
+};
 
 export default TermsOfService;

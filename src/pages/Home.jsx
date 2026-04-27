@@ -1,18 +1,22 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { MdExpandMore, MdSchool, MdPeople, MdTrendingUp, MdStar, MdEvent, MdArticle } from 'react-icons/md'
 import AnimatedSection from '../components/AnimatedSection.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
+import useSeo from '../hooks/useSeo.js';
 
 function Home() {
-  useEffect(() => {
-    document.title = "Adelphos | Science & Technology Excellence High School";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Adelphos is a premier high school and preparatory academy (Grades 9–12) dedicated to academic excellence in STEM and innovation.");
-  }, []);
+  useSeo({
+    title: "Adelphos High School | Ethiopia's Science & Technology Excellence",
+    description: "Adelphos is a premier Science and Technology academy (Grades 9–12) in Wolaita, Ethiopia, fostering academic leadership through coding, programming, and rigorous scientific study.",
+    keywords: "Adelphos High School, Science and Technology Ethiopia, science preparatory school, programming for students, coding Ethiopia, Physics, Chemistry, Biology excellence, Wolaita technology school",
+    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/"
+  });
+
+  // No other useEffects in Home.jsx to preserve.
 
   return (
-    <main className="bg-slate-50 text-slate-950">
+    <main className="bg-slate-50 text-slate-950 overflow-x-clip relative min-h-dvh">
       <AnimatedSection className="bg-white hero-panel py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_0.85fr] items-center">

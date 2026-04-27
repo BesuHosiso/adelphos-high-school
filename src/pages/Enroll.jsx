@@ -3,16 +3,18 @@ import { useLocation, Link } from 'react-router-dom'
 import { MdExpandMore, MdArrowForward, MdRocket, MdSchool, MdCalendarToday, MdAttachMoney, MdCheckCircle, MdInfo, MdHelp } from 'react-icons/md'
 import AnimatedSection from '../components/AnimatedSection.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
+import useSeo from '../hooks/useSeo.js';
 
 const Enroll = () => {
 
     const location = useLocation();
 
-    useEffect(() => {
-        document.title = "Apply Now | Adelphos Admission Process";
-        const meta = document.querySelector('meta[name="description"]');
-        if (meta) meta.setAttribute("content", "Join Adelphos High School. Start your application today for our specialized STEM and technology preparatory programs.");
-    }, []);
+    useSeo({
+        title: "Join Adelphos | Science & Technology Admission Process",
+        description: "Apply to Ethiopia's leading Science and Technology academy. View requirements for our technology-focused preparatory programs and start your application today.",
+        keywords: "Adelphos admissions, high school application Ethiopia, Science and Technology school fees, admission requirements Wolaita, apply for coding and programming, preparatory school enrollment",
+        canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/enroll"
+    });
 
     useEffect(() => {
         let timeoutId;
@@ -69,7 +71,7 @@ const Enroll = () => {
     };
 
     return (
-        <main className="bg-slate-50 text-slate-950 min-h-dvh">
+        <main className="bg-slate-50 text-slate-950 overflow-x-clip relative w-full min-h-dvh">
             <AnimatedSection className="bg-slate-950 text-white py-20">
                 <div className="mx-auto max-w-6xl px-6">
                     <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">

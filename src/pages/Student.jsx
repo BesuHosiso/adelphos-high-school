@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { MdSchool, MdEvent, MdAssignment, MdScience } from 'react-icons/md'
 import AnimatedSection from '../components/AnimatedSection.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
+import useSeo from '../hooks/useSeo.js';
 
 function Student() {
   const galleryImages = [
@@ -255,8 +256,15 @@ function Student() {
     };
   }, [modalOpen]);
 
+  useSeo({
+    title: "Student Portal & Innovation Gallery | Adelphos High School",
+    description: "Access resources for our Science and Technology students. Explore our innovation gallery and join our specialized Programming, Science, and Tech clubs.",
+    keywords: "Adelphos student portal, Science and Technology club, Programming club Ethiopia, student innovation gallery, high school resources, coding projects for students",
+    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/student"
+  });
+
   return (
-    <main className="bg-slate-50 text-slate-950 overflow-x-clip relative max-w-full">
+    <main className="bg-slate-50 text-slate-950 overflow-x-clip relative w-full min-h-dvh">
       <AnimatedSection className="py-20">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <SectionHeader

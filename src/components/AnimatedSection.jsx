@@ -27,7 +27,7 @@ const AnimatedSection = ({ children, className = '', ...props }) => {
     <section 
       ref={ref} 
       {...props} 
-      className={`${className} animate-enter ${visible ? 'visible' : ''}`}
+      className={`${className} animate-enter overflow-x-clip ${visible ? 'visible' : ''}`}
     >
       {children}
     </section>

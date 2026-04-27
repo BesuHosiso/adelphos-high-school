@@ -1,9 +1,18 @@
 import React from 'react';
 import AnimatedSection from '../components/AnimatedSection.jsx';
 import SectionHeader from '../components/SectionHeader.jsx';
+import useSeo from '../hooks/useSeo.js';
 
-const PrivacyPolicy = () => (
-  <main className="bg-slate-50 text-slate-950">
+const PrivacyPolicy = () => {
+  useSeo({
+    title: "Privacy Policy | Adelphos Science & Technology Academy",
+    description: "Learn how we protect student and parent data at Adelphos High School. Our commitment to privacy within our scientific and technological community.",
+    keywords: "Adelphos privacy policy, data protection, high school legal, student information safety",
+    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/privacy-policy"
+  });
+
+  return (
+    <main className="bg-slate-50 text-slate-950">
     <AnimatedSection className="py-20">
       <div className="mx-auto max-w-5xl px-6 text-center">
         <SectionHeader
@@ -51,6 +60,7 @@ const PrivacyPolicy = () => (
       </div>
     </AnimatedSection>
   </main>
-);
+  );
+};
 
 export default PrivacyPolicy;

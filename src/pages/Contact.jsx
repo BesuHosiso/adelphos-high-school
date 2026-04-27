@@ -3,6 +3,7 @@ import { MdLocationOn, MdEmail, MdCall, MdSend, MdAccessTime, MdSchool, MdPsycho
 import { FaTelegramPlane, FaFacebook } from 'react-icons/fa'
 import AnimatedSection from '../components/AnimatedSection.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
+import useSeo from '../hooks/useSeo.js';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -66,8 +67,15 @@ function Contact() {
     }
   }
 
+  useSeo({
+    title: "Contact Adelphos | Science & Technology School in Wolaita",
+    description: "Reach out to Ethiopia's premier Science and Technology academy. Contact our Wolaita campus for admissions, visits, and technical program inquiries.",
+    keywords: "contact Adelphos High School, Science and Technology academy Ethiopia, school location Wolaita, contact programming school, Ethiopia high school phone, school email Boditi",
+    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/contact"
+  });
+
   return (
-    <main className="bg-slate-50 text-slate-950">
+    <main className="bg-slate-50 text-slate-950 overflow-x-clip relative w-full min-h-dvh">
       <AnimatedSection className="py-20">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <SectionHeader

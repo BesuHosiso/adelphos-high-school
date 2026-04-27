@@ -1,17 +1,19 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { MdSchool, MdPeople, MdScience, MdComputer, MdEngineering, MdBiotech, MdTimeline, MdVerified, MdGroup, MdEmojiEvents } from 'react-icons/md'
 import AnimatedSection from '../components/AnimatedSection.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
+import useSeo from '../hooks/useSeo.js';
 
 function About() {
-  useEffect(() => {
-    document.title = "Our Vision & Mission | About Adelphos";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Learn about the history and curriculum of Adelphos High School. Our focus is empowering students through integrated core subjects and cutting-edge tech.");
+  useSeo({
+    title: "Vision & Science Mission | About Adelphos High School",
+    description: "Discover our mission to empower students via a rigorous Science and Technology curriculum. Adelphos is dedicated to scientific discovery and technological leadership in Ethiopia.",
+    keywords: "Adelphos history, Science and Technology curriculum, Biology, Chemistry, Physics, technological education Ethiopia, Ministry of Education Ethiopia accreditation, preparatory high school",
+    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/about"
   }, []);
 
   return (
-    <main className="bg-slate-50 text-slate-950">
+    <main className="bg-slate-50 text-slate-950 overflow-x-clip relative min-h-dvh">
       <AnimatedSection className="py-20">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <SectionHeader
