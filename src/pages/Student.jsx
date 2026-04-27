@@ -256,7 +256,7 @@ function Student() {
   }, [modalOpen]);
 
   return (
-    <main className="bg-slate-50 text-slate-950 overflow-x-hidden">
+    <main className="bg-slate-50 text-slate-950 overflow-x-hidden max-w-full relative">
       <AnimatedSection className="py-20">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <SectionHeader
@@ -508,7 +508,7 @@ function Student() {
               </button>
             </div>
 
-            <div className="flex justify-center mt-6 sm:mt-8 space-x-2">
+            <div className="flex flex-wrap justify-center mt-6 sm:mt-8 gap-2">
               {galleryImages.map((_, index) => (
                 <button
                   key={index}

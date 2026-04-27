@@ -69,7 +69,7 @@ const Enroll = () => {
     };
 
     return (
-        <main className="bg-slate-50 text-slate-950 overflow-x-hidden min-h-screen">
+        <main className="bg-slate-50 text-slate-950 overflow-x-hidden max-w-full relative min-h-screen">
             <AnimatedSection className="bg-slate-950 text-white py-20">
                 <div className="mx-auto max-w-6xl px-6">
                     <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
