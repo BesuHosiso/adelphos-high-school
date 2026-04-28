@@ -260,13 +260,13 @@ function Student() {
     title: "Student Portal & Innovation Gallery | Adelphos High School",
     description: "Access resources for our Science and Technology students. Explore our innovation gallery and join our specialized Programming, Science, and Tech clubs.",
     keywords: "Adelphos student portal, Science and Technology club, Programming club Ethiopia, student innovation gallery, high school resources, coding projects for students",
-    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/student"
+    canonicalUrl: "https://adelphos-high-school.vercel.app/student"
   });
 
   return (
-    <main className="bg-slate-50 text-slate-950 overflow-x-clip relative w-full min-h-dvh">
+    <main className="bg-slate-50 text-slate-950 w-full overflow-x-hidden relative min-h-dvh">
       <AnimatedSection className="py-20">
-        <div className="mx-auto max-w-5xl px-6 text-center">
+        <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <SectionHeader
             label="Student Portal"
             title="Master Your Studies, Connect with Your Community."
@@ -276,7 +276,7 @@ function Student() {
       </AnimatedSection>
 
       <AnimatedSection className="py-16">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="space-y-6">
               <div className="surface-panel rounded-4xl p-8 hover:shadow-xl transition-shadow duration-300">
@@ -312,7 +312,7 @@ function Student() {
       </AnimatedSection>
 
       <AnimatedSection className="py-16">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="space-y-6">
               <div className="surface-panel rounded-4xl p-8 hover:shadow-xl transition-shadow duration-300">
@@ -416,7 +416,7 @@ function Student() {
       </AnimatedSection>
 
       <AnimatedSection className="py-16 bg-slate-950 text-white">
-        <div className="mx-auto max-w-6xl px-6">
+        <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-semibold tracking-tight">Student Gallery</h2>
             <p className="mt-4 text-base leading-8 text-slate-300">

@@ -9,13 +9,13 @@ function About() {
     title: "Vision & Science Mission | About Adelphos High School",
     description: "Discover our mission to empower students via a rigorous Science and Technology curriculum. Adelphos is dedicated to scientific discovery and technological leadership in Ethiopia.",
     keywords: "Adelphos history, Science and Technology curriculum, Biology, Chemistry, Physics, technological education Ethiopia, Ministry of Education Ethiopia accreditation, preparatory high school",
-    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/about"
+    canonicalUrl: "https://adelphos-high-school.vercel.app/about"
   }, []);
 
   return (
-    <main className="bg-slate-50 text-slate-950 overflow-x-clip relative min-h-dvh">
+    <main className="bg-slate-50 text-slate-950 w-full overflow-x-hidden relative min-h-dvh">
       <AnimatedSection className="py-20">
-        <div className="mx-auto max-w-5xl px-6 text-center">
+        <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <SectionHeader
             label="Our Vision"
             title="Empowering students through science and technology."
@@ -25,7 +25,7 @@ function About() {
       </AnimatedSection>
 
       <AnimatedSection className="py-16 bg-slate-950 text-white">
-        <div className="mx-auto max-w-6xl px-6">
+        <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <div className="grid gap-10 lg:grid-cols-3">
             {[
               {
@@ -51,7 +51,7 @@ function About() {
       </AnimatedSection>
 
       <AnimatedSection className="py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <SectionHeader
             label="Our Curriculum"
             title="Science and Technology"
@@ -103,7 +103,7 @@ function About() {
       </AnimatedSection>
 
       <AnimatedSection className="py-20">
-        <div className="mx-auto max-w-7xl px-6">
+        <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <SectionHeader
             label="Our History"
             title="A young school with a record of success."
@@ -149,7 +149,7 @@ function About() {
       </AnimatedSection>
 
       <AnimatedSection className="py-20 bg-slate-950 text-white">
-        <div className="mx-auto max-w-6xl px-6">
+        <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <SectionHeader
             label="Accreditation & Recognition"
             title="Committed to the highest standards."
