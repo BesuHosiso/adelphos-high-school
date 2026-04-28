@@ -65,7 +65,7 @@ const Header = () => {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed inset-0 z-50 transition-opacity duration-300 ${sidebarOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        className={`fixed inset-0 z-50 overflow-hidden transition-opacity duration-300 ${sidebarOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         style={{
           backdropFilter: sidebarOpen ? 'blur(18px) saturate(160%)' : 'none',
           WebkitBackdropFilter: sidebarOpen ? 'blur(18px) saturate(160%)' : 'none',
@@ -75,7 +75,7 @@ const Header = () => {
         aria-hidden={!sidebarOpen}
       >
         <aside
-          className={`absolute right-0 top-0 h-full w-[85vw] max-w-130 transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} bg-white dark:bg-slate-900 border border-slate-200/80 shadow-2xl rounded-2xl`}
+          className={`fixed right-0 top-0 h-full w-[85vw] max-w-130 transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} bg-white dark:bg-slate-900 border border-slate-200/80 shadow-2xl rounded-2xl`}
           onClick={e => e.stopPropagation()}
         >
           <div className="flex items-center justify-end px-6 py-4 bg-transparent">
