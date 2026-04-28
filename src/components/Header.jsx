@@ -28,7 +28,7 @@ const Header = () => {
   // Effect to manage the 'invisible' class with a delay for closing animation
   useEffect(() => {
     if (sidebarOpen) {
-      setIsSidebarActuallyVisible(true); // Ensure it's visible when sidebarOpen is true
+     r// Ensure it's visible when sidebarOpen is true
     } else {
       const timer = setTimeout(() => {
         setIsSidebarActuallyVisible(false);

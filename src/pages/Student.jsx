@@ -264,7 +264,7 @@ function Student() {
   });
 
   return (
-    <main className="bg-slate-50 text-slate-950 max-w-[100vw] overflow-x-clip relative min-h-screen flex flex-col">
+    <main className="bg-slate-50 text-slate-950 max-w-full overflow-x-clip relative min-h-screen flex flex-col">
       <AnimatedSection className="py-12 md:py-16 lg:py-20">
         <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <SectionHeader
@@ -427,7 +427,7 @@ function Student() {
             {galleryImages.map((image, index) => (
               <div
                 key={index}
-                className="rounded-4xl overflow-hidden bg-slate-800 cursor-pointer hover:bg-slate-700 hover:shadow-2xl hover:shadow-red-600/20 transition-all duration-300 group relative"
+                className="rounded-4xl overflow-x-hidden bg-slate-800 cursor-pointer hover:bg-slate-700 hover:shadow-2xl hover:shadow-red-600/20 transition-all duration-300 group relative"
                 onClick={() => {
                   setCurrentIndex(index);
                   setModalOpen(true);
@@ -461,7 +461,7 @@ function Student() {
 
       {modalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-md flex items-center justify-center z-50 p-4 overflow-hidden">
-          <div className="bg-slate-900/95 backdrop-blur-xl rounded-3xl p-5 sm:p-8 md:p-10 max-w-5xl w-full relative shadow-2xl border border-white/10 max-h-[92dvh] flex flex-col">
+          <div className="bg-slate-900/95 backdrop-blur-xl rounded-3xl p-5 sm:p-8 md:p-10 max-w-[100vw] relative shadow-2xl border border-white/10 max-h-[92dvh] w-[95vw] sm:w-full flex flex-col">
             <button
               onClick={() => setModalOpen(false)}
               type="button"
