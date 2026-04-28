@@ -363,12 +363,12 @@ function Student() {
                     <p className="text-xs text-slate-600 mt-1">Extended hours during exam week: 7 AM - 10 PM</p>
                   </div>
                   <div className="border-l-4 border-red-600 pl-4">
-                    <p className="text-sm font-semibold text-slate-950">Scholarship Applications Open</p>
-                    <p className="text-xs text-slate-600 mt-1">Science & Tech Scholarships now available</p>
+                    <p className="text-sm font-semibold text-slate-950">Entrance Exam Day</p>
+                    <p className="text-xs text-slate-600 mt-1">Entrance examination for Grade 12 students</p>
                   </div>
                   <div className="border-l-4 border-red-600 pl-4">
-                    <p className="text-sm font-semibold text-slate-950">Guest Speaker Series</p>
-                    <p className="text-xs text-slate-600 mt-1">Industry leaders visiting next month</p>
+                    <p className="text-sm font-semibold text-slate-950">Final School Exam Day</p>
+                    <p className="text-xs text-slate-600 mt-1">Final assessments for Grade 9 - 11 students</p>
                   </div>
                 </div>
               </div>
