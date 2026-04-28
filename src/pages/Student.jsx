@@ -264,7 +264,7 @@ function Student() {
   });
 
   return (
-    <main className="bg-slate-50 text-slate-950 w-full overflow-x-hidden relative min-h-dvh">
+    <main className="bg-slate-50 text-slate-950 max-w-[100vw] overflow-x-clip relative min-h-screen flex flex-col">
       <AnimatedSection className="py-12 md:py-16 lg:py-20">
         <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <SectionHeader
@@ -276,7 +276,7 @@ function Student() {
       </AnimatedSection>
 
       <AnimatedSection className="py-10 md:py-14 lg:py-16">
-        <div className="w-full max-w-5xl mx-auto px-6 text-center">
+        <div className="w-full max-w-5xl mx-auto px-6">
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="space-y-6">
               <div className="surface-panel rounded-4xl p-8 hover:shadow-xl transition-shadow duration-300">
@@ -416,7 +416,7 @@ function Student() {
       </AnimatedSection>
 
       <AnimatedSection className="py-10 md:py-14 lg:py-16 bg-slate-950 text-white">
-        <div className="w-full max-w-5xl mx-auto px-6 text-center">
+        <div className="w-full max-w-5xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-semibold tracking-tight">Student Gallery</h2>
             <p className="mt-4 text-base leading-8 text-slate-300">

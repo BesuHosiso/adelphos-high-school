@@ -71,10 +71,10 @@ const Enroll = () => {
     };
         
     return (
-        <main className="bg-slate-50 text-slate-950 w-full overflow-x-hidden relative min-h-dvh">
+        <main className="bg-slate-50 text-slate-950 max-w-[100vw] overflow-x-clip relative min-h-screen flex flex-col">
             <AnimatedSection className="bg-slate-950 text-white py-20">
                 <div className="mx-auto max-w-6xl px-6">
-                    <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
+                    <div className="grid gap-10 grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] items-center">
                         <div>
                             <div className="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.28em] text-white/80">
                                 Apply now
@@ -97,7 +97,7 @@ const Enroll = () => {
                         </div>
                         <div className="rounded-4xl border border-white/10 bg-white/10 p-8 shadow-2xl shadow-black/10">
                             <div className="flex h-24 w-24 items-center justify-center rounded-3xl border border-white/20 bg-white/10">
-                                <img src="/logo.png" alt="Adelphos Logo" className="h-16 w-16 object-contain" loading="lazy" />
+                                <img src="/logo.png" alt="Adelphos Logo" className="size-16 object-contain" loading="lazy" />
                             </div>
                             <p className="mt-6 text-sm leading-7 text-slate-200">
                                 Adelphos brings together ambitious learners, modern STEM labs, and a values-driven academic environment.

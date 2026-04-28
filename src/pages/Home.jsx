@@ -16,7 +16,7 @@ function Home() {
   // No other useEffects in Home.jsx to preserve.
 
   return (
-    <main className="bg-slate-50 text-slate-950 w-full overflow-x-hidden relative min-h-dvh">
+    <main className="bg-slate-50 text-slate-950 max-w-[100vw] overflow-x-clip relative min-h-screen flex flex-col">
       <AnimatedSection className="bg-white hero-panel py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_0.85fr] items-center">

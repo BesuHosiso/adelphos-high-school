@@ -13,7 +13,7 @@ function About() {
   }, []);
 
   return (
-    <main className="bg-slate-50 text-slate-950 w-full overflow-x-hidden relative min-h-dvh">
+    <main className="bg-slate-50 text-slate-950 max-w-[100vw] overflow-x-clip relative min-h-screen flex flex-col">
       <AnimatedSection className="py-20">
         <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <SectionHeader
@@ -58,7 +58,7 @@ function About() {
             description="Our curiculum focuses on integrated core subjects with a focus on cutting-edge technological and scientific applications, all perfectly aligned with this program focus."
           />
 
-          <div className="mt-12 grid gap-8 grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
+          <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-4xl border border-slate-200 bg-white p-8 text-center shadow-md">
               <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-red-100 mb-4">
                 <MdScience className="text-2xl text-red-600" />
