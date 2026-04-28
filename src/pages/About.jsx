@@ -58,7 +58,7 @@ function About() {
             description="Our curiculum focuses on integrated core subjects with a focus on cutting-edge technological and scientific applications, all perfectly aligned with this program focus."
           />
 
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-8 grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
             <div className="rounded-4xl border border-slate-200 bg-white p-8 text-center shadow-md">
               <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-red-100 mb-4">
                 <MdScience className="text-2xl text-red-600" />

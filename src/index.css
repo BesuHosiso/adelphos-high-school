@@ -3,8 +3,6 @@
 
 @import "tailwindcss";
 
-@variant dark (&:where(.dark, .dark *));
-
 /* 2. This replaces the `theme: { extend: { ... } }` object */
 @theme {
   /* Colors */

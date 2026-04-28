@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const navLinks = [
   { label: 'Home', to: '/' },
@@ -9,22 +9,46 @@ const navLinks = [
 ]
 
 
-import { useEffect } from 'react'
-
 const Header = () => {
   const location = useLocation()
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [isSidebarActuallyVisible, setIsSidebarActuallyVisible] = useState(false) // Controls the 'invisible' class
+
+  // Function to open the sidebar
+  const openSidebar = () => {
+    setSidebarOpen(true); // Start the slide-in animation
+  };
+
+  // Function to close the sidebar
+  const closeSidebar = () => {
+    setSidebarOpen(false); // Start the slide-out animation
+    // The useEffect below will handle setting isSidebarActuallyVisible(false) after a delay
+  };
+
+  // Effect to manage the 'invisible' class with a delay for closing animation
+  useEffect(() => {
+    if (sidebarOpen) {
+      setIsSidebarActuallyVisible(true); // Ensure it's visible when sidebarOpen is true
+    } else {
+      const timer = setTimeout(() => {
+        setIsSidebarActuallyVisible(false);
+      }, 300); // Match the transition-transform duration
+      return () => clearTimeout(timer); // Cleanup the timer if sidebarOpen changes again
+    }
+  }, [sidebarOpen]);
 
   // Close sidebar if resizing to desktop
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
-        setSidebarOpen(false)
+        if (sidebarOpen) {
+          closeSidebar(); // Use the consistent closeSidebar function
+        }
       }
     }
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
-  }, [])
+  }, [sidebarOpen])
 
   return (
     <header className={`sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 dark:bg-slate-900/95 dark:border-slate-700/80${sidebarOpen ? '' : ' backdrop-blur-sm backdrop-saturate-150'}`}> 
@@ -55,7 +79,7 @@ const Header = () => {
         <button
           className="md:hidden flex items-center justify-center p-2 rounded focus:outline-none focus:ring-2 focus:ring-slate-400"
           aria-label="Open menu"
-          onClick={() => setSidebarOpen(true)}
+          onClick={openSidebar}
         >
           <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-slate-950">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -71,18 +95,18 @@ const Header = () => {
           WebkitBackdropFilter: sidebarOpen ? 'blur(18px) saturate(160%)' : 'none',
           background: sidebarOpen ? 'rgba(20,20,30,0.22)' : 'transparent',
         }}
-        onClick={() => setSidebarOpen(false)}
+        onClick={closeSidebar}
         aria-hidden={!sidebarOpen}
       >
         <aside
-          className={`fixed right-0 top-0 h-full w-[85vw] max-w-130 transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} bg-white dark:bg-slate-900 border border-slate-200/80 shadow-2xl rounded-2xl`}
+          className={`fixed right-0 top-0 h-full w-[85vw] max-w-130 transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} ${isSidebarActuallyVisible ? '' : 'invisible'} bg-white dark:bg-slate-900 border border-slate-200/80 shadow-2xl rounded-2xl`}
           onClick={e => e.stopPropagation()}
         >
           <div className="flex items-center justify-end px-6 py-4 bg-transparent">
             <button
               className="p-2 rounded focus:outline-none focus:ring-2 focus:ring-slate-400"
               aria-label="Close menu"
-              onClick={() => setSidebarOpen(false)}
+              onClick={closeSidebar}
             >
               <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="text-slate-950">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -95,7 +119,7 @@ const Header = () => {
                 key={link.to}
                 to={link.to}
                 className={`transition-colors ${location.pathname === link.to ? 'text-slate-950 font-semibold' : 'hover:text-slate-950'}`}
-                onClick={() => setSidebarOpen(false)}
+                onClick={closeSidebar}
               >
                 {link.label}
               </Link>
@@ -105,7 +129,7 @@ const Header = () => {
             <Link
               to="/enroll"
               className="w-full inline-flex items-center justify-center rounded-full border border-slate-200 bg-slate-950 px-5 py-4 text-sm font-semibold text-white shadow-sm shadow-slate-900/10 transition hover:bg-slate-800"
-              onClick={() => setSidebarOpen(false)}
+              onClick={closeSidebar}
             >
               Enroll Now
             </Link>
