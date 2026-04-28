@@ -99,7 +99,7 @@ const Header = () => {
         aria-hidden={!sidebarOpen}
       >
         <aside
-          className={`fixed right-0 top-0 h-full w-[85vw] max-w-130 transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} ${isSidebarActuallyVisible ? '' : 'invisible'} bg-white dark:bg-slate-900 border border-slate-200/80 shadow-2xl rounded-2xl`}
+          className={`fixed right-0 top-0 h-full w-[85vw] max-w-[85vw] transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} ${isSidebarActuallyVisible ? '' : 'invisible'} bg-white dark:bg-slate-900 border border-slate-200/80 shadow-2xl rounded-2xl`}
           onClick={e => e.stopPropagation()}
         >
           <div className="flex items-center justify-end px-6 py-4 bg-transparent">

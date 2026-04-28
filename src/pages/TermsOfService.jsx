@@ -12,7 +12,7 @@ const TermsOfService = () => {
   });
 
   return (
-    <main className="bg-slate-50 text-slate-950 overflow-x-clip relative w-full min-h-dvh">
+    <main className="bg-slate-50 text-slate-950 w-full overflow-x-hidden relative min-h-dvh">
     <AnimatedSection className="py-20">
       <div className="mx-auto max-w-5xl px-6 text-center">
         <SectionHeader
