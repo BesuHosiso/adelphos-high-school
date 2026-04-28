@@ -265,7 +265,7 @@ function Student() {
 
   return (
     <main className="bg-slate-50 text-slate-950 w-full overflow-x-hidden relative min-h-dvh">
-      <AnimatedSection className="py-20">
+      <AnimatedSection className="py-12 md:py-16 lg:py-20">
         <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <SectionHeader
             label="Student Portal"
@@ -275,7 +275,7 @@ function Student() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection className="py-16">
+      <AnimatedSection className="py-10 md:py-14 lg:py-16">
         <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="space-y-6">
@@ -311,8 +311,8 @@ function Student() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection className="py-16">
-        <div className="w-full max-w-5xl mx-auto px-6 text-center">
+      <AnimatedSection className="py-10 md:py-14 lg:py-16">
+        <div className="w-full max-w-5xl mx-auto px-6">
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="space-y-6">
               <div className="surface-panel rounded-4xl p-8 hover:shadow-xl transition-shadow duration-300">
@@ -327,8 +327,8 @@ function Student() {
                         event.type === 'holiday' ? 'bg-blue-600' : 'bg-red-600'
                       }`}></div>
                       <div className="flex-1">
-                        <p className="text-sm font-semibold text-slate-950">{event.title}</p>
-                        <p className="text-xs text-slate-600">{event.date} · {event.time} - {event.location}</p>
+                        <p className="text-sm font-semibold text-slate-950 text-left">{event.title}</p>
+                        <p className="text-xs text-slate-600 text-left">{event.date} · {event.time} - {event.location}</p>
                       </div>
                     </div>
                   ))}
@@ -351,22 +351,22 @@ function Student() {
               </div>
             </div>
 
-            <div className="space-y-6">
+              <div className="space-y-6">
               <div className="surface-panel rounded-4xl p-8 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center gap-4 mb-4">
                   <MdAssignment className="text-3xl text-red-600" />
                   <h3 className="text-xl font-semibold text-slate-950">Recent Announcements</h3>
                 </div>
                 <div className="space-y-4">
-                  <div className="border-l-4 border-red-600 pl-4">
+                  <div className="border-l-4 border-red-600 pl-4 text-left">
                     <p className="text-sm font-semibold text-slate-950">New Library Hours</p>
                     <p className="text-xs text-slate-600 mt-1">Extended hours during exam week: 7 AM - 10 PM</p>
                   </div>
-                  <div className="border-l-4 border-red-600 pl-4">
+                  <div className="border-l-4 border-red-600 pl-4 text-left">
                     <p className="text-sm font-semibold text-slate-950">Entrance Exam Day</p>
                     <p className="text-xs text-slate-600 mt-1">Entrance examination for Grade 12 students</p>
                   </div>
-                  <div className="border-l-4 border-red-600 pl-4">
+                  <div className="border-l-4 border-red-600 pl-4 b text-left">
                     <p className="text-sm font-semibold text-slate-950">Final School Exam Day</p>
                     <p className="text-xs text-slate-600 mt-1">Final assessments for Grade 9 - 11 students</p>
                   </div>
@@ -415,7 +415,7 @@ function Student() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection className="py-16 bg-slate-950 text-white">
+      <AnimatedSection className="py-10 md:py-14 lg:py-16 bg-slate-950 text-white">
         <div className="w-full max-w-5xl mx-auto px-6 text-center">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-semibold tracking-tight">Student Gallery</h2>
