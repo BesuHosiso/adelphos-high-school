@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimatedSection from '../components/AnimatedSection.jsx';
 import SectionHeader from '../components/SectionHeader.jsx';
-import useSeo from '../hooks/useSeo.js';
+import useSeo from '../../useSeo';
 
 const TermsOfService = () => {
   useSeo({

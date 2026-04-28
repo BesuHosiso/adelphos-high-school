@@ -1,8 +1,8 @@
 import React from 'react'
 import { MdSchool, MdPeople, MdScience, MdComputer, MdEngineering, MdBiotech, MdTimeline, MdVerified, MdGroup, MdEmojiEvents } from 'react-icons/md'
 import AnimatedSection from '../components/AnimatedSection.jsx'
-import SectionHeader from '../components/SectionHeader.jsx'
-import useSeo from '../hooks/useSeo.js';
+import SectionHeader from '../components/SectionHeader.jsx';
+import useSeo from '../../useSeo';
 
 function About() {
   useSeo({

@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useLocation, Link } from 'react-router-dom'
 import { MdExpandMore, MdArrowForward, MdRocket, MdSchool, MdCalendarToday, MdAttachMoney, MdCheckCircle, MdInfo, MdHelp } from 'react-icons/md'
 import AnimatedSection from '../components/AnimatedSection.jsx'
-import SectionHeader from '../components/SectionHeader.jsx'
-import useSeo from '../hooks/useSeo.js';
+import SectionHeader from '../components/SectionHeader.jsx';
+import useSeo from '../../useSeo';
 
 const Enroll = () => {
 

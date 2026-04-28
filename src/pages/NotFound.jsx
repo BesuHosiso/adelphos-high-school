@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import useSeo from '../hooks/useSeo.js';
+import useSeo from '../../useSeo';
 
 const NotFound = () => {
   useSeo({

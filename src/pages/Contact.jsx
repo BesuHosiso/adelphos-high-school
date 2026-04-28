@@ -3,7 +3,7 @@ import { MdLocationOn, MdEmail, MdCall, MdSend, MdAccessTime, MdSchool, MdPsycho
 import { FaTelegramPlane, FaFacebook } from 'react-icons/fa'
 import AnimatedSection from '../components/AnimatedSection.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
-import useSeo from '../hooks/useSeo.js';
+import useSeo from '../../useSeo';
 
 function Contact() {
   const [formData, setFormData] = useState({

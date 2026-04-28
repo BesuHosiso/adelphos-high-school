@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { MdSchool, MdEvent, MdAssignment, MdScience } from 'react-icons/md'
 import AnimatedSection from '../components/AnimatedSection.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
-import useSeo from '../hooks/useSeo.js';
+import useSeo from '../../useSeo';
 
 function Student() {
   const galleryImages = [

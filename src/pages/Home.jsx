@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { MdExpandMore, MdSchool, MdPeople, MdTrendingUp, MdStar, MdEvent, MdArticle } from 'react-icons/md'
 import AnimatedSection from '../components/AnimatedSection.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
-import useSeo from '../hooks/useSeo.js';
+import useSeo from '../../useSeo';
 
 function Home() {
   useSeo({
