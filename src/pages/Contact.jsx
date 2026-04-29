@@ -152,7 +152,7 @@ function Contact() {
               ) : (
                 <>
                   <h3 className="text-2xl font-semibold text-slate-950 mb-6">Send us a message</h3>
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-6" action="https://formsubmit.co/adelphosbrothers@gmail.com" method="POST">
                     <div className="grid gap-6 md:grid-cols-2">
                       <div>
                         <label className="block text-sm font-semibold uppercase tracking-[0.18em] text-slate-700 mb-2">Name</label>

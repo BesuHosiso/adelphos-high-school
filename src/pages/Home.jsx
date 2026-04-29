@@ -154,7 +154,7 @@ function Home() {
                 <MdTrendingUp className="text-2xl text-red-600" />
               </div>
               <div className="mt-4">
-                <div className="text-3xl font-bold text-slate-950">3 years</div>
+                <div className="text-3xl font-bold text-slate-950">3 Years</div>
                 <div className="text-sm text-slate-600">Years Since Founding</div>
               </div>
             </div>
@@ -227,7 +227,7 @@ function Home() {
                 </div>
                 <div>
                   <div className="font-semibold text-slate-950">Metekiya B.</div>
-                  <div className="text-sm text-slate-600">Class: Grade 10</div>
+                  <div className="text-sm text-slate-600">Class: Grade 9</div>
                 </div>
               </div>
               <p className="text-sm leading-7 text-slate-600 mb-4">

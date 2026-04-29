@@ -280,7 +280,7 @@ const Enroll = () => {
                                 </p>
                             </div>
                         ) : (
-                            <form onSubmit={handleSubmit} className="space-y-8">
+                            <form onSubmit={handleSubmit} className="space-y-8" action="https://formsubmit.co/adelphosbrothers@gmail.com" method="POST">
                                 <div className="grid gap-8 md:grid-cols-2">
                                     <div className="space-y-3 md:col-span-2">
                                         <label className="block text-sm font-semibold uppercase tracking-[0.18em] text-slate-700">Student Full Name</label>
@@ -289,7 +289,7 @@ const Enroll = () => {
                                             value={formData.fullName}
                                             onChange={handleChange}
                                             className="w-full rounded-3xl border border-slate-200 bg-white px-6 py-4 text-sm text-slate-900 outline-none transition focus:border-red-600 focus:ring-2 focus:ring-red-100"
-                                            placeholder="John Doe"
+                                            placeholder="Abera Baza"
                                             type="text"
                                         />
                                         {errors.fullName && <p className="text-sm text-red-600">{errors.fullName}</p>}
@@ -322,7 +322,7 @@ const Enroll = () => {
                                             value={formData.parentName}
                                             onChange={handleChange}
                                             className="w-full rounded-3xl border border-slate-200 bg-white px-6 py-4 text-sm text-slate-900 outline-none transition focus:border-red-600 focus:ring-2 focus:ring-red-100"
-                                            placeholder="Jane Doe"
+                                            placeholder="Baza Bade"
                                             type="text"
                                         />
                                         {errors.parentName && <p className="text-sm text-red-600">{errors.parentName}</p>}
