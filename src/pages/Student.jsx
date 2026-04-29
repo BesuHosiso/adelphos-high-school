@@ -8,225 +8,169 @@ function Student() {
   const galleryImages = [
     {
       src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=400&q=80",
-      alt: "Students in robotics lab",
-      title: "Advanced Robotics",
-      description: "Exploring AI-driven kinematics in our senior projects.",
+      alt: "Professional Insights",
+      title: "Professional Insights",
+      description: "Inviting industry leaders to share their journeys and inspire future career paths.",
       date: "March 15, 2026"
     },
     {
       src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80",
-      alt: "Collaborative study session",
+      alt: "Working for Community",
+      title: "Working for Community",
+      description: "Cleaning Our Environment Together.",
+      date: "February 28, 2025"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+      alt: "MindOver Math Competition",
+      title: "MindOver Math Competition",
+      description: "Intense problem-solving battle between different sections of the same grade from MindOver Math Club.",
+      date: "April 10, 2026"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+      alt: "Collaborative Learning",
       title: "Collaborative Learning",
-      description: "Finding synergy in our modern study spaces.",
-      date: "February 28, 2026"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-      alt: "Modern classroom",
-      title: "Innovation Spaces",
-      description: "Optimized for focus and creative inspiration.",
+      description: "Students collaborating on team projects within their classroom.",
       date: "April 10, 2026"
     },
     {
       src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-      alt: "Modern classroom",
-      title: "Innovation Spaces",
-      description: "Optimized for focus and creative inspiration.",
+      alt: "English Debate",
+      title: "English Debate",
+      description: "Between Grade 9 and 10 students face off in lively arguments.",
       date: "April 10, 2026"
     },
     {
       src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-      alt: "Modern classroom",
-      title: "Innovation Spaces",
-      description: "Optimized for focus and creative inspiration.",
+      alt: "English Debate",
+      title: "Teachers-with-Students Wholeday",
+      description: "Teachers and students Spending time together & sharing a meal at Kidist Hana School.",
       date: "April 10, 2026"
     }
   ];
 
   const events = [
-    {
-      title: "STEM Fair",
-      date: "May 15, 2026",
-      time: "10:00 AM",
-      location: "Science Center",
-      type: "academic"
-    },
-    {
-      title: "Career Workshop",
-      date: "June 8, 2026",
-      time: "2:00 PM",
-      location: "Auditorium",
-      type: "academic"
-    },
-    {
-      title: "Summer Science Camp",
-      date: "July 12, 2026",
-      time: "9:00 AM",
-      location: "Lab Complex",
-      type: "academic"
-    },
-    {
-      title: "Back to School Prep",
-      date: "August 20, 2026",
-      time: "11:00 AM",
-      location: "Main Hall",
-      type: "academic"
-    },
-    {
-      title: "Welcome Back Event",
-      date: "September 5, 2026",
-      time: "4:00 PM",
-      location: "Campus Green",
-      type: "academic"
-    },
-    {
-      title: "Halloween Science Fair",
-      date: "October 31, 2026",
-      time: "3:00 PM",
-      location: "Exhibition Hall",
-      type: "academic"
-    },
-    {
-      title: "Thanksgiving Academic Awards",
-      date: "November 20, 2026",
-      time: "6:00 PM",
-      location: "Grand Auditorium",
-      type: "academic"
-    },
-    {
-      title: "Winter STEM Showcase",
-      date: "December 15, 2026",
-      time: "5:00 PM",
-      location: "Innovation Hub",
-      type: "academic"
-    },
-    {
-      title: "Christmas Break",
-      date: "December 20, 2026",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "New Year's Day",
-      date: "January 1, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Martin Luther King Jr. Day",
-      date: "January 18, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Valentine's Day STEM Competition",
-      date: "February 14, 2027",
-      time: "12:00 PM",
-      location: "Science Wing",
-      type: "academic"
-    },
-    {
-      title: "Presidents' Day",
-      date: "February 15, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Spring Break Begins",
-      date: "March 14, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "academic"
-    },
-    {
-      title: "Easter Break",
-      date: "April 17, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Good Friday",
-      date: "April 18, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Spring Innovation Summit",
-      date: "April 25, 2027",
-      time: "10:00 AM",
-      location: "Tech Center",
-      type: "academic"
-    },
-    {
-      title: "Memorial Day",
-      date: "May 31, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Independence Day",
-      date: "July 4, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Summer Research Program",
-      date: "July 15, 2027",
-      time: "9:00 AM",
-      location: "Research Labs",
-      type: "academic"
-    },
-    {
-      title: "Labor Day",
-      date: "September 6, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Fall Semester Welcome",
-      date: "September 8, 2027",
-      time: "8:00 AM",
-      location: "Main Quad",
-      type: "academic"
-    },
-    {
-      title: "Columbus Day",
-      date: "October 11, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Veterans Day",
-      date: "November 11, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Thanksgiving Break",
-      date: "November 25, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "holiday"
-    },
-    {
-      title: "Winter Break Begins",
-      date: "December 18, 2027",
-      time: "All Day",
-      location: "Campus Wide",
-      type: "academic"
-    }
-  ];
+  {
+    title: "Ethiopian New Year (Enkutatash)",
+    date: "September 1, 2018",
+    time: "All Day",
+    location: "Campus Wide",
+    type: "holiday"
+  },
+  {
+    title: "Meskel (Finding of the True Cross)",
+    date: "September 17, 2019",
+    time: "All Day",
+    location: "Campus Wide",
+    type: "holiday"
+  },
+  {
+    title: "Exam 1: First Semester First Mid-Term",
+    date: "October 10, 2019",
+    time: "8:30 AM",
+    location: "Classrooms",
+    type: "academic"
+  },
+  {
+    title: "MindOver Math Competition",
+    date: "October 20, 2019",
+    time: "10:00 AM",
+    location: "Outside Class",
+    type: "academic"
+  },
+  {
+    title: "Exam 2: First Semester Second Mid-Term",
+    date: "December 1, 2019",
+    time: "9:00 AM",
+    location: "Classrooms",
+    type: "academic"
+  },
+  {
+    title: "Exam IT & HPE Test",
+    date: "December 19, 2019",
+    time: "1:30 PM",
+    location: "Classrooms",
+    type: "academic"
+  },
+  {
+    title: "Exam 3: First Semester Third Mid-Term",
+    date: "January 2, 2019",
+    time: "1:30 PM",
+    location: "Classrooms",
+    type: "academic"
+  },
+  {
+    title: "Ethiopian Christmas (Genna)",
+    date: "January 29, 2019",
+    time: "All Day",
+    location: "Campus Wide",
+    type: "holiday"
+  },
+  {
+    title: "Exam 4: First Semester Final Exam (Comprehensive S&T)",
+    date: "January 20, 2019",
+    time: "8:30 AM",
+    location: "Exam Hall",
+    type: "academic"
+  },
+  {
+    title: "Victory at Adwa Day",
+    date: "March 23, 2019",
+    time: "All Day",
+    location: "Campus Wide",
+    type: "holiday"
+  },
+  {
+    title: "Teachers-with-Students Social Day",
+    date: "March 11, 2019",
+    time: "11:00 AM",
+    location: "School Grounds",
+    type: "academic"
+  },
+  {
+    title: "Exam 5: Second Semester first Mid-Term",
+    date: "March 16, 2019",
+    time: "9:00 AM",
+    location: "Science Lab",
+    type: "academic"
+  },
+  {
+    title: "Exam 6: Second Semester Second Mid-Term",
+    date: "April 12, 2019",
+    time: "9:00 AM",
+    location: "Exam Hall",
+    type: "academic"
+  },
+  {
+    title: "Ethiopian Easter (Fasika)",
+    date: "April 24, 2019",
+    time: "All Day",
+    location: "Campus Wide",
+    type: "holiday"
+  },
+  {
+    title: "Exam 7: Second Semester Third Mid-Term",
+    date: "May 17, 2019",
+    time: "1:30 PM",
+    location: "Classrooms",
+    type: "academic"
+  },
+  {
+    title: "Exam 8: Second Semester Final Exam",
+    date: "June 8, 2019",
+    time: "8:30 AM",
+    location: "Exam Hall",
+    type: "academic"
+  },
+  {
+    title: "Final Event",
+    date: "July 3, 2019",
+    time: "10:00 AM",
+    location: "Local Community Center",
+    type: "academic"
+  }
+];
 
   const [modalOpen, setModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -360,14 +304,14 @@ useEffect(() => {
                 <div className="space-y-4">
                   <div className="border-l-4 border-red-600 pl-4 text-left">
                     <p className="text-sm font-semibold text-slate-950">New Library Hours</p>
-                    <p className="text-xs text-slate-600 mt-1">Extended hours during exam week: 7 AM - 10 PM</p>
+                    <p className="text-xs text-slate-600 mt-1">Extended hours during exam week: 10 AM - 8 PM</p>
                   </div>
                   <div className="border-l-4 border-red-600 pl-4 text-left">
-                    <p className="text-sm font-semibold text-slate-950">Entrance Exam Day</p>
+                    <p className="text-sm font-semibold text-slate-950">Entrance Exam in Jun 24 EC</p>
                     <p className="text-xs text-slate-600 mt-1">Entrance examination for Grade 12 students</p>
                   </div>
                   <div className="border-l-4 border-red-600 pl-4 b text-left">
-                    <p className="text-sm font-semibold text-slate-950">Final School Exam Day</p>
+                    <p className="text-sm font-semibold text-slate-950">Final School Exam Soon...</p>
                     <p className="text-xs text-slate-600 mt-1">Final assessments for Grade 9 - 11 students</p>
                   </div>
                 </div>

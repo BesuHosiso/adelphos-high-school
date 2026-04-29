@@ -187,11 +187,11 @@ function Home() {
                 </div>
                 <div>
                   <div className="font-semibold text-slate-950">Alazar W.</div>
-                  <div className="text-sm text-slate-600">Class of 2026</div>
+                  <div className="text-sm text-slate-600">Class: Grade 12</div>
                 </div>
               </div>
               <p className="text-sm leading-7 text-slate-600 mb-4">
-                "Adelphos gave me the confidence to pursue computer science at MIT. The robotics program was incredible."
+                "Adelphos invites successful professionals who prove everything is possible even entrance exams are winnable."
               </p>
               <div className="flex text-red-600">
                 {[...Array(5)].map((_, i) => (
@@ -207,11 +207,11 @@ function Home() {
                 </div>
                 <div>
                   <div className="font-semibold text-slate-950">Feven A.</div>
-                  <div className="text-sm text-slate-600">Class of 2024</div>
+                  <div className="text-sm text-slate-600">Class: Grade 10</div>
                 </div>
               </div>
               <p className="text-sm leading-7 text-slate-600 mb-4">
-                "The biotech research opportunities here are unmatched. I'm now studying biomedical engineering."
+                "I love the adelphos meetings! Recieving comments and fixing issues ensures we succeed without any cheating."
               </p>
               <div className="flex text-red-600">
                 {[...Array(5)].map((_, i) => (
@@ -223,15 +223,15 @@ function Home() {
             <div className="surface-panel rounded-4xl p-8">
               <div className="flex items-center gap-3 mb-4">
                 <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center">
-                  <span className="text-lg font-semibold text-red-600">KA</span>
+                  <span className="text-lg font-semibold text-red-600">MB</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-slate-950">Kebron A.</div>
-                  <div className="text-sm text-slate-600">Class of 2026</div>
+                  <div className="font-semibold text-slate-950">Metekiya B.</div>
+                  <div className="text-sm text-slate-600">Class: Grade 10</div>
                 </div>
               </div>
               <p className="text-sm leading-7 text-slate-600 mb-4">
-                "The mentorship program helped me discover my passion for AI. The teachers here are incredible."
+                "Adelphos made starting high school easy. I'm so satisfied with the teaching in our classes now!"
               </p>
               <div className="flex text-red-600">
                 {[...Array(5)].map((_, i) => (

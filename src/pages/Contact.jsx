@@ -112,8 +112,8 @@ function Contact() {
                   <div>
                     <h3 className="text-xl font-semibold text-slate-950">Email Us</h3>
                     <p className="mt-2 text-sm leading-7 text-slate-600">
-                      Admissions: <a href="mailto:admissions@adelphos.edu" className="text-red-600 hover:underline">admissions@adelphos.edu</a><br />
-                      General: <a href="mailto:info@adelphos.edu" className="text-red-600 hover:underline">info@adelphos.edu</a>
+                    
+                      General: <a href="mailto:adelphosbrothers@gmail.com" className="text-red-600 hover:underline">adelphosbrothers@gmail.com</a>
                     </p>
                   </div>
                 </div>
@@ -124,8 +124,8 @@ function Contact() {
                   <div>
                     <h3 className="text-xl font-semibold text-slate-950">Call Us</h3>
                     <p className="mt-2 text-sm leading-7 text-slate-600">
-                      Office: +251 123 456 789<br />
-                      Emergency: +251 987 654 321
+                      Office: +251 913 841 213<br />
+                      Optional Office: +251 913 203 778
                     </p>
                   </div>
                 </div>

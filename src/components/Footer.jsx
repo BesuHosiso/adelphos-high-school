@@ -45,15 +45,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-slate-400">
                 <MdLocationOn className="text-lg text-red-600 shrink-0 mt-0.5" />
-                <span>123 Education Lane, Wolaita, Ethiopia</span>
+                <span>Boditi Wolaita, Ethiopia</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-slate-400">
                 <MdEmail className="text-lg text-red-600 shrink-0" />
-                <a href="mailto:info@adelphos.edu" className="hover:text-white transition-colors">info@adelphos.edu</a>
+                <a href="mailto:adelphosbrothers@gmail.com" className="hover:text-white transition-colors">adelphosbrothers@gmail.com</a>
               </li>
               <li className="flex items-center gap-3 text-sm text-slate-400">
                 <MdCall className="text-lg text-red-600 shrink-0" />
-                <span>+251 123 456 789</span>
+                <span>+251 913 841 213</span>
               </li>
             </ul>
           </div>
