@@ -10,7 +10,7 @@ function Home() {
     title: "Adelphos High School | Ethiopia's Science & Technology Excellence",
     description: "Adelphos is a premier Science and Technology academy (Grades 9–12) in Wolaita, Ethiopia, fostering academic leadership through coding, programming, and rigorous scientific study.",
     keywords: "Adelphos High School, Science and Technology Ethiopia, science preparatory school, programming for students, coding Ethiopia, Physics, Chemistry, Biology excellence, Wolaita technology school",
-    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/"
+    canonicalUrl: "https://adelphoshighschool.vercel.app"
   });
 
   // No other useEffects in Home.jsx to preserve.

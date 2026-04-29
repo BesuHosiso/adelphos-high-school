@@ -8,7 +8,7 @@ const TermsOfService = () => {
     title: "Terms of Service | Adelphos Science & Technology Academy",
     description: "Guidelines for accessing the Adelphos High School digital platforms and educational resources in science and technology.",
     keywords: "Adelphos terms, high school rules, digital platform usage, educational resource terms",
-    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/terms-of-service"
+    canonicalUrl: "https://adelphoshighschool.vercel.app/terms-of-service"
   });
 
   return (

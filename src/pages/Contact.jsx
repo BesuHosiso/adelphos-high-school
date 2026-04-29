@@ -71,7 +71,7 @@ function Contact() {
     title: "Contact Adelphos | Science & Technology School in Wolaita",
     description: "Reach out to Ethiopia's premier Science and Technology academy. Contact our Wolaita campus for admissions, visits, and technical program inquiries.",
     keywords: "contact Adelphos High School, Science and Technology academy Ethiopia, school location Wolaita, contact programming school, Ethiopia high school phone, school email Boditi",
-    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/contact"
+    canonicalUrl: "https://adelphoshighschool.vercel.app/contact"
   });
 
   return (

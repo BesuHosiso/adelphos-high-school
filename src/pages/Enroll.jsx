@@ -13,7 +13,7 @@ const Enroll = () => {
         title: "Join Adelphos | Science & Technology Admission Process",
         description: "Apply to Ethiopia's leading Science and Technology academy. Join our tech-focused preparatory programs and start your application today.",
         keywords: "Adelphos admissions, high school application Ethiopia, Science and Technology school fees, admission requirements Wolaita, apply for coding and programming, preparatory school enrollment",
-        canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/enroll"
+        canonicalUrl: "https://adelphoshighschool.vercel.app/enroll"
     });
 
     useEffect(() => {

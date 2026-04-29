@@ -50,7 +50,7 @@ const Header = () => {
   }, [sidebarOpen])
 
   return (
-    <header className={`sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 dark:bg-slate-900/95 dark:border-slate-700/80${sidebarOpen ? '' : ' backdrop-blur-sm backdrop-saturate-150'}`}> 
+    <header className={`sticky top-0 z-50 border-b border-slate-200/80 bg-white/95${sidebarOpen ? '' : ' backdrop-blur-sm backdrop-saturate-150'}`}> 
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-3">
           <img src="/logo.png" alt="Adelphos logo" className="h-11 w-11 object-contain" />
@@ -98,7 +98,7 @@ const Header = () => {
         aria-hidden={!sidebarOpen}
       >
         <aside
-          className={`fixed right-0 top-0 h-full w-[85vw] max-w-[85vw] transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} ${isSidebarActuallyVisible ? '' : 'invisible'} bg-white dark:bg-slate-900 border border-slate-200/80 shadow-2xl rounded-2xl`}
+          className={`fixed right-0 top-0 h-full w-[85vw] max-w-[85vw] transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} ${isSidebarActuallyVisible ? '' : 'invisible'} bg-white border border-slate-200/80 shadow-2xl rounded-2xl`}
           onClick={e => e.stopPropagation()}
         >
           <div className="flex items-center justify-end px-6 py-4 bg-transparent">

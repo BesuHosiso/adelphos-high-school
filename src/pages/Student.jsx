@@ -260,7 +260,7 @@ useEffect(() => {
     title: "Student Portal & Innovation Gallery | Adelphos High School",
     description: "Access resources for our Science and Technology students. Explore our innovation gallery and join our specialized Programming, Science, and Tech clubs.",
     keywords: "Adelphos student portal, Science and Technology club, Programming club Ethiopia, student innovation gallery, high school resources, coding projects for students",
-    canonicalUrl: "https://adelphos-high-school.vercel.app/student"
+    canonicalUrl: "https://adelphoshighschool.vercel.app/student"
   });
 
   return (

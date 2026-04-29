@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
     title: "Privacy Policy | Adelphos Science & Technology Academy",
     description: "Learn how we protect student and parent data at Adelphos High School. Our commitment to privacy within our scientific and technological community.",
     keywords: "Adelphos privacy policy, data protection, high school legal, student information safety",
-    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/privacy-policy"
+    canonicalUrl: "https://adelphoshighschool.vercel.app/privacy-policy"
   });
 
   return (

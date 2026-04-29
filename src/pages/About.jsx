@@ -9,7 +9,7 @@ function About() {
     title: "Vision & Science Mission | About Adelphos High School",
     description: "Discover our mission to empower students via a rigorous Science and Technology curriculum. Adelphos is dedicated to scientific discovery and technological leadership in Ethiopia.",
     keywords: "Adelphos history, Science and Technology curriculum, Biology, Chemistry, Physics, technological education Ethiopia, Ministry of Education Ethiopia accreditation, preparatory high school",
-    canonicalUrl: "https://adelphos-high-school.vercel.app/about"
+    canonicalUrl: "https://adelphoshighschool.vercel.app/about"
   }, []);
 
   return (

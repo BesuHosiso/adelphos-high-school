@@ -6,7 +6,7 @@ const NotFound = () => {
     title: "404 Not Found — Adelphos High School",
     description: "The page you are looking for doesn’t exist or has been moved. Return to the Adelphos High School homepage.",
     keywords: "Adelphos, Adelphos High School, 404, page not found, error, broken link",
-    canonicalUrl: "https://besuhosiso.github.io/adelphos-high-school/404" // Or the base URL if no specific 404 page
+    canonicalUrl: "https://adelphoshighschool.vercel.app/404" // Or the base URL if no specific 404 page
   });
   return (
     <main className="min-h-screen flex flex-col bg-slate-50 text-slate-95 items-center justify-center py-20 px-6 max-w-[100vw] overflow-x-clip relative">
