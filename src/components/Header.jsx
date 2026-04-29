@@ -14,10 +14,10 @@ const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [isSidebarActuallyVisible, setIsSidebarActuallyVisible] = useState(false) // Controls the 'invisible' class
 
-  // Function to open the sidebar
-  const openSidebar = () => {
-    setSidebarOpen(true); // Start the slide-in animation
-  };
+ const openSidebar = () => {
+  setIsSidebarActuallyVisible(true);
+  setSidebarOpen(true); // Start the slide-in animation
+};
 
   // Function to close the sidebar
   const closeSidebar = () => {
@@ -25,17 +25,16 @@ const Header = () => {
     // The useEffect below will handle setting isSidebarActuallyVisible(false) after a delay
   };
 
-  // Effect to manage the 'invisible' class with a delay for closing animation
   useEffect(() => {
-    if (sidebarOpen) {
-     r// Ensure it's visible when sidebarOpen is true
-    } else {
-      const timer = setTimeout(() => {
-        setIsSidebarActuallyVisible(false);
-      }, 300); // Match the transition-transform duration
-      return () => clearTimeout(timer); // Cleanup the timer if sidebarOpen changes again
-    }
-  }, [sidebarOpen]);
+  if (sidebarOpen) {
+    setIsSidebarActuallyVisible(true);
+  } else {
+    const timer = setTimeout(() => {
+      setIsSidebarActuallyVisible(false);
+    }, 300); // Match the transition-transform duration
+    return () => clearTimeout(timer); // Cleanup the timer if sidebarOpen changes again
+  }
+}, [sidebarOpen]);
 
   // Close sidebar if resizing to desktop
   useEffect(() => {

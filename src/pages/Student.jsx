@@ -244,17 +244,17 @@ function Student() {
     setVisibleEvents(prev => Math.min(prev + 5, events.length));
   };
 
-  // Fix for "two scrollers" - Locks background scrolling when modal is open
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [modalOpen]);
+ // Locks background scrolling only while the gallery modal is open
+useEffect(() => {
+  if (!modalOpen) return undefined;
+
+  const previousOverflow = document.body.style.overflow;
+  document.body.style.overflow = 'hidden';
+
+  return () => {
+    document.body.style.overflow = previousOverflow;
+  };
+}, [modalOpen]);
 
   useSeo({
     title: "Student Portal & Innovation Gallery | Adelphos High School",
