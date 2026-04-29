@@ -142,12 +142,6 @@ function Contact() {
                   <p className="text-base leading-7 text-slate-600 mb-6">
                     Thank you for reaching out. We've received your message and will get back to you within 24 hours.
                   </p>
-                  <button
-                    onClick={() => setFormSubmitted(false)}
-                    className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
-                  >
-                    Send Another Message
-                  </button>
                 </div>
               ) : (
                 <>
