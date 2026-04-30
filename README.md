@@ -1,16 +1,47 @@
-# React + Vite
+# Adelphos High School Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, modern, and responsive website for **Adelphos High School**, built with React and Vite.  
+Designed to deliver clear information for students, families, and visitors across desktop and mobile devices.
 
-Currently, two official plugins are available:
+<p align="left">
+  <a href="#overview">Overview</a> •
+  <a href="#features">Features</a> •
+  <a href="#tech-stack">Tech Stack</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This repository contains the official frontend codebase for the Adelphos High School website.  
+The goal is to provide a clean, accessible, and engaging digital experience for:
 
-## Expanding the ESLint configuration
+- Prospective students and parents
+- Current students
+- School community members
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The site includes academic information, student-focused content, admissions flow, and contact pages, with strong emphasis on visual clarity and performance.
+
+---
+
+## Features
+
+- **Responsive design** for phones, tablets, and desktops
+- **Student portal page** with events, announcements, and gallery modal
+- **Admissions / enrollment page** with clear calls to action
+- **SEO-aware structure** (meta tags and canonical handling)
+- **Accessible navigation** with mobile menu support
+- **Modern UI styling** using Tailwind CSS + custom theme tokens
+- **Animated sections** for polished, lightweight interactions
+
+---
+
+## Tech Stack
+
+- **Framework:** React
+- **Build Tool:** Vite
+- **Routing:** React Router
+- **Styling:** Tailwind CSS + custom CSS variables
+- **Icons:** React Icons
+- **Linting:** ESLint
+- **Hosting-ready:** Vercel configuration included
