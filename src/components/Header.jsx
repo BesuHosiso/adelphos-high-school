@@ -27,7 +27,7 @@ const Header = () => {
   }, [sidebarOpen])
 
   return (
-    <header className={`sticky top-0 z-50 border-b border-slate-200/80 bg-white/95${sidebarOpen ? '' : ' backdrop-blur-sm backdrop-saturate-150'}`}>
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-3">
           <img src="/logo.png" alt="Adelphos logo" className="h-11 w-11 object-contain" />
@@ -36,7 +36,11 @@ const Header = () => {
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex">
           {navLinks.map((link) => (
-            <Link key={link.to} to={link.to} className={`transition-colors ${location.pathname === link.to ? 'text-slate-950' : 'hover:text-slate-950'}`}>
+            <Link
+              key={link.to}
+              to={link.to}
+              className={`transition-colors ${location.pathname === link.to ? 'text-slate-950' : 'hover:text-slate-950'}`}
+            >
               {link.label}
             </Link>
           ))}
@@ -71,7 +75,7 @@ const Header = () => {
         aria-hidden={!sidebarOpen}
       >
         <aside
-          className={`fixed right-0 top-0 h-full w-[85vw] max-w-[85vw] bg-white border-l border-slate-200 shadow-2xl transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col overflow-y-auto`}
+          className={`fixed right-0 top-0 h-full w-[85vw] max-w-[85vw] bg-white border-l border-slate-200 border-b border-slate-200 shadow-2xl transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'} flex flex-col overflow-y-auto`}
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex items-center justify-end px-6 py-4 border-b border-slate-100">
