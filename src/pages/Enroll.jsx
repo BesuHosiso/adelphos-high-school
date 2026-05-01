@@ -346,7 +346,7 @@ const Enroll = () => {
                                             value={formData.email}
                                             onChange={handleChange}
                                             className="w-full rounded-3xl border border-slate-200 bg-white px-6 py-4 text-sm text-slate-900 outline-none transition focus:border-red-600 focus:ring-2 focus:ring-red-100"
-                                            placeholder="example@adelphos.edu"
+                                            placeholder="example@gmail.com"
                                             type="email"
                                         />
                                         {errors.email && <p className="text-sm text-red-600">{errors.email}</p>}

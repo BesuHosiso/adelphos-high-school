@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
           <section className="pt-6 border-t border-slate-100">
             <p className="text-base leading-8 text-slate-600">
               If you have questions about your data or wish to request removal, please contact our registrar's office at 
-              <a href="mailto:info@adelphos.edu" className="text-red-600 hover:underline ml-1">info@adelphos.edu</a>.
+              <a href="mailto:adelphosbrothers@gmail.com" className="text-red-600 hover:underline ml-1">adelphosbrothers@gmail.com</a>.
             </p>
             <p className="text-sm text-slate-400 mt-8 italic">
               Last updated: April 23, 2026
