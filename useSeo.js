@@ -2,15 +2,17 @@ import { useEffect } from 'react';
 
 /**
  * Custom hook to manage SEO meta tags for a page.
- * Sets document title, meta description, meta keywords, and canonical URL.
+ * Sets document title, meta description, meta keywords, canonical URL,
+ * and optional JSON-LD structured data.
  *
  * @param {object} options - SEO options for the page.
  * @param {string} options.title - The title of the page.
  * @param {string} options.description - The meta description for the page.
  * @param {string} options.keywords - Comma-separated keywords for the page.
  * @param {string} options.canonicalUrl - The canonical URL for the page.
+ * @param {object|object[]} [options.structuredData] - JSON-LD object or array.
  */
-const useSeo = ({ title, description, keywords, canonicalUrl }) => {
+const useSeo = ({ title, description, keywords, canonicalUrl, structuredData }) => {
   useEffect(() => {
     // Set document title
     document.title = title;
@@ -42,9 +44,19 @@ const useSeo = ({ title, description, keywords, canonicalUrl }) => {
     }
     linkCanonical.setAttribute('href', canonicalUrl);
 
-    // No cleanup needed for these tags as they will be overwritten by the next page's useSeo call.
-    // If a tag is not set by a subsequent page, the default from index.html will persist.
-  }, [title, description, keywords, canonicalUrl]);
+    // Optional JSON-LD structured data
+    if (structuredData) {
+      const scriptId = 'seo-structured-data';
+      let jsonLdScript = document.getElementById(scriptId);
+      if (!jsonLdScript) {
+        jsonLdScript = document.createElement('script');
+        jsonLdScript.type = 'application/ld+json';
+        jsonLdScript.id = scriptId;
+        document.head.appendChild(jsonLdScript);
+      }
+      jsonLdScript.textContent = JSON.stringify(structuredData);
+    }
+  }, [title, description, keywords, canonicalUrl, structuredData]);
 };
 
 export default useSeo;

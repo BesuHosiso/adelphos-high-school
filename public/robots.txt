@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adelphos.edu/sitemap.xml
+Sitemap: https://adelphoshighschool.vercel.app/sitemap.xml

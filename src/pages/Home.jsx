@@ -6,11 +6,49 @@ import SectionHeader from '../components/SectionHeader.jsx'
 import useSeo from '../../useSeo';
 
 function Home() {
-  useSeo({
+    useSeo({
     title: "Adelphos High School | Ethiopia's Science & Technology Excellence",
     description: "Adelphos is a premier Science and Technology academy (Grades 9–12) in Wolaita, Ethiopia, fostering academic leadership through coding, programming, and rigorous scientific study.",
     keywords: "Adelphos High School, Science and Technology Ethiopia, science preparatory school, programming for students, coding Ethiopia, Physics, Chemistry, Biology excellence, Wolaita technology school",
-    canonicalUrl: "https://adelphoshighschool.vercel.app"
+    canonicalUrl: "https://adelphoshighschool.vercel.app/",
+    structuredData: [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Adelphos High School",
+        url: "https://adelphoshighschool.vercel.app"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is the curriculum focus?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Our curriculum emphasizes science and technology with strong programs in biology, chemistry, physics, English, and coding."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "What clubs are available?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Students can join Science and Technology Club, MindOver Math Club, English Club, and Programming Club."
+            }
+          },
+          {
+            "@type": "Question",
+            name: "How do you support student growth?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "We offer mentorship, regular progress reviews, and a low student-to-teacher ratio for personalized support."
+            }
+          }
+        ]
+      }
+    ]
   });
 
   // No other useEffects in Home.jsx to preserve.
