@@ -50,7 +50,7 @@ const Header = () => {
   }, [sidebarOpen])
 
   return (
-    <header className={`sticky top-0 z-50 border-b border-slate-200/80 bg-white/95${sidebarOpen ? '' : ' backdrop-blur-sm backdrop-saturate-150'}`}> 
+    <header className={`sticky top-0 z-50 border-b border-slate-200/80 bg-white backdrop-blur-sm !bg-opacity-95 text-slate-900 ${sidebarOpen ? '' : 'backdrop-saturate-150'}`}> 
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-3">
           <img src="/logo.png" alt="Adelphos logo" className="h-11 w-11 object-contain" />

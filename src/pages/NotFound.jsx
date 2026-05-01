@@ -9,7 +9,7 @@ const NotFound = () => {
     canonicalUrl: "https://adelphoshighschool.vercel.app/404" // Or the base URL if no specific 404 page
   });
   return (
-    <main className="min-h-screen flex flex-col bg-slate-50 text-slate-95 items-center justify-center py-20 px-6 max-w-[100vw] overflow-x-clip relative">
+    <main className="min-h-screen flex flex-col bg-slate-50 text-slate-950 items-center justify-center py-20 px-6 max-w-[100vw] overflow-x-clip relative">
       <div className="max-w-2xl rounded-4xl border border-slate-200 bg-white p-12 shadow-2xl shadow-slate-200/40 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-600">Page not found</p>
         <h1 className="mt-6 text-5xl font-semibold tracking-tight text-slate-950">404</h1>
