@@ -35,10 +35,10 @@ function Student() {
       date: "April 10, 2026"
     },
     {
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-      alt: "English Debate",
-      title: "English Debate",
-      description: "Between Grade 9 and 10 students face off in lively arguments.",
+      src: "/eatingwithforeigners.jpg",
+      alt: "eatingwithforeigner",
+      title: "Australian Visitors",
+      description: "Visitors from australia in adelphos spending time with students and teachers.",
       date: "April 10, 2026"
     },
     {
