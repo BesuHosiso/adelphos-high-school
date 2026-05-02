@@ -73,7 +73,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Adelphos High School & Preparatory. All rights reserved.
           </p>
           <p className="text-xs text-slate-500">
-            Developed by <a href="https://github.com/besuhosiso" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-500 transition-colors font-medium">besuhosiso</a>
+            Developed by <a href="https://besuhosiso.github.io/BesufikadHosiso/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-500 transition-colors font-medium">besuhosiso</a>
           </p>
         </div>
       </div>

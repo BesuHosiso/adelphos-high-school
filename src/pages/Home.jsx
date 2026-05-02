@@ -51,8 +51,6 @@ function Home() {
     ]
   });
 
-  // No other useEffects in Home.jsx to preserve.
-
   return (
     <main className="bg-slate-50 text-slate-950 max-w-[100vw] overflow-x-clip relative min-h-screen flex flex-col">
       <AnimatedSection className="bg-white hero-panel py-20">
@@ -83,7 +81,7 @@ function Home() {
 
             <div className="rounded-4xl border border-slate-200 bg-slate-50 p-8 shadow-2xl shadow-slate-200/40">
               <img
-                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+                src="/adelphosHighSchool.jpg"
                 alt="Students collaborating in a modern science and technology lab"
                 className="h-full w-full rounded-[1.75rem] object-cover"
                 loading="lazy"
