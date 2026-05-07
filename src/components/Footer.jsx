@@ -5,13 +5,13 @@ import { MdLocationOn, MdEmail, MdCall } from 'react-icons/md'
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-950 text-white py-16 border-t border-white/5">
-      <div className="mx-auto max-w-7xl px-6">
+    <footer className="py-16 text-white border-t bg-slate-950 border-white/5">
+      <div className="px-6 mx-auto max-w-7xl">
         <div className="grid gap-12 lg:grid-cols-4 md:grid-cols-2">
           {/* Brand Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <img src="/logo.png" alt="Adelphos Logo" className="h-10 w-10 object-contain" />
+              <img src="/logo.png" alt="Adelphos Logo" className="object-contain w-10 h-10" />
               <span className="text-xl font-bold tracking-tight">ADELPHOS</span>
             </div>
             <p className="text-sm leading-7 text-slate-400">
@@ -31,11 +31,11 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white mb-6">Explore</h3>
             <ul className="space-y-4">
-              <li><Link to="/" className="text-sm text-slate-400 hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/about" className="text-sm text-slate-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/enroll" className="text-sm text-slate-400 hover:text-white transition-colors">Enrollment</Link></li>
-              <li><Link to="/student" className="text-sm text-slate-400 hover:text-white transition-colors">Student Portal</Link></li>
-              <li><Link to="/contact" className="text-sm text-slate-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/" className="text-sm transition-colors text-slate-400 hover:text-white">Home</Link></li>
+              <li><Link to="/about" className="text-sm transition-colors text-slate-400 hover:text-white">About Us</Link></li>
+              <li><Link to="/enroll" className="text-sm transition-colors text-slate-400 hover:text-white">Enrollment</Link></li>
+              <li><Link to="/student" className="text-sm transition-colors text-slate-400 hover:text-white">Student Portal</Link></li>
+              <li><Link to="/contact" className="text-sm transition-colors text-slate-400 hover:text-white">Contact</Link></li>
             </ul>
           </div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3 text-sm text-slate-400">
                 <MdEmail className="text-lg text-red-600 shrink-0" />
-                <a href="mailto:adelphosbrothers@gmail.com" className="hover:text-white transition-colors">adelphosbrothers@gmail.com</a>
+                <a href="mailto:adelphosbrothers@gmail.com" className="transition-colors hover:text-white">adelphosbrothers@gmail.com</a>
               </li>
               <li className="flex items-center gap-3 text-sm text-slate-400">
                 <MdCall className="text-lg text-red-600 shrink-0" />
@@ -62,18 +62,18 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white mb-6">Legal</h3>
             <ul className="space-y-4">
-              <li><Link to="/privacy-policy" className="text-sm text-slate-400 hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms-of-service" className="text-sm text-slate-400 hover:text-white transition-colors">Terms of Service</Link></li>
+              <li><Link to="/privacy-policy" className="text-sm transition-colors text-slate-400 hover:text-white">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service" className="text-sm transition-colors text-slate-400 hover:text-white">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+        <div className="flex flex-col items-center justify-between gap-4 pt-8 mt-16 text-center border-t border-white/5 md:flex-row md:text-left">
           <p className="text-xs text-slate-500">
             &copy; {new Date().getFullYear()} Adelphos High School & Preparatory. All rights reserved.
           </p>
           <p className="text-xs text-slate-500">
-            Developed by <a href="https://besuhosiso.github.io/BesufikadHosiso/" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-500 transition-colors font-medium">besuhosiso</a>
+            Developed by <a href="https://besufikadhosiso.github.io/Portfolio/" target="_blank" rel="noopener noreferrer" className="font-medium text-red-600 transition-colors hover:text-red-500">besufikadhosiso</a>
           </p>
         </div>
       </div>
